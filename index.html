@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Welcome to my simple calculator page!</h2>
+<p id="numbers"></p>
+<p id="result"></p>
+
+<script>
+  // Step 1: Get two numbers using prompt
+  let num1 = Number(prompt("Enter the first number:"));
+  let num2 = Number(prompt("Enter the second number:"));
+
+  // Step 2: Perform operations
+  let sum = num1 + num2;
+  let difference = num1 - num2;
+  let product = num1 * num2;
+
+  // Step 3: Display using document.write()
+  document.write("Numbers: " + num1 + " and " + num2 + "<br>");
+  document.write("Sum: " + sum + "<br>");
+  document.write("Difference: " + difference + "<br>");
+  document.write("Product: " + product + "<br><br>");
+
+  // Step 4: Display using innerHTML
+  document.getElementById("numbers").innerHTML =
+    "Numbers: " + num1 + " and " + num2;
+
+  document.getElementById("result").innerHTML =
+    "Sum: " + sum + "<br>" +
+    "Difference: " + difference + "<br>" +
+    "Product: " + product;
+</script>
+
+</body>
+</html>
